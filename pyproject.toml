@@ -1,0 +1,20 @@
+[project]
+name = "nl2sql-clickhouse"
+version = "1.0.0"
+description = "Text to SQL on Clickhouse data warehouse"
+authors = [
+    {name = "Raghavendra Tapas", email = "raghutapas12@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "mindsdb-sdk",
+    "clickhouse-connect",
+    "pandas",
+    "python-dotenv",
+    "dspy",
+    "ipykernel",
+    "google-generativeai"
+]
+    
+
