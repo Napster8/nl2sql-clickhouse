@@ -67,7 +67,7 @@ flowchart TD
 ### Installation
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone [(https://github.com/Napster8/nl2sql-clickhouse/](https://github.com/Napster8/nl2sql-clickhouse/)
 cd SQL-on-Clickhouse
 
 ```
