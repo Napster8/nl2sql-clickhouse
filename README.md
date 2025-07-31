@@ -70,22 +70,16 @@ flowchart TD
 git clone <repository-url>
 cd SQL-on-Clickhouse
 
-# Create environment file
-cp .env.example .env
-# Edit .env with your credentials
 ```
 
 ### Environment Variables
-Create a `.env` file:
-```env
-ch_host=your-clickhouse-host
-ch_username=your-username
-ch_password=your-password
-ch_database=your-database-name
-
-# For AI enrichment (optional)
-GOOGLE_API_KEY=your-google-api-key
+Create a `.env` file based on `.env.example`:
+```bash
+cp .env.example .env
 ```
+
+Then edit `.env` with your actual credentials:
+
 
 ### Usage
 
@@ -189,7 +183,15 @@ uv run query_orchestrator.py --create-kb --interactive
 - `clear` - Clear conversation history
 - `exit` or `quit` - Exit the assistant
 
-## Technologies Used
+## Security Considerations
+
+- **Environment Variables**: All sensitive credentials are stored in `.env` file (never committed)
+- **API Key Management**: Rotate API keys regularly and use least-privilege access
+- **Database Access**: Use read-only database users when possible for query execution
+- **Input Validation**: All user inputs are validated before SQL generation
+- **SQL Safety**: Generated queries are validated for safety before execution
+
+
 
 - **Python 3.9+** - Core programming language
 - **ClickHouse** - Target database for SQL execution
