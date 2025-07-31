@@ -67,7 +67,7 @@ flowchart TD
 ### Installation
 ```bash
 # Clone the repository
-git clone [(https://github.com/Napster8/nl2sql-clickhouse/](https://github.com/Napster8/nl2sql-clickhouse/)
+git clone https://github.com/Napster8/nl2sql-clickhouse/
 cd SQL-on-Clickhouse
 
 ```
@@ -127,6 +127,10 @@ uv run query_orchestrator.py --interactive
 
 # Create knowledge base and start interactive mode in one command
 uv run query_orchestrator.py --create-kb --interactive
+
+# To update the Question and Successful SQL queries generated.
+
+# uv run update_learnings_kb.py
 ```
 
 **Available Commands:**
