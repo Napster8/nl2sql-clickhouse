@@ -130,7 +130,7 @@ uv run query_orchestrator.py --create-kb --interactive
 
 # To update the Question and Successful SQL queries generated.
 
-# uv run update_learnings_kb.py
+uv run update_learnings_kb.py
 ```
 
 **Available Commands:**
